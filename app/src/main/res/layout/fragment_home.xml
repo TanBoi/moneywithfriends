@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20px">
+
+        <EditText
+            android:id="@+id/txt_nouveau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ee9910" />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ee9910"
+            android:text="Ajouter"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="182dp" />
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/personnes"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:text="Amis déjà créé:"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textSize="50px"/>
+
+    <ScrollView
+        android:id="@+id/scroll_home"
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:background="#eeeeee">
+
+        <LinearLayout
+            android:id="@+id/scroll_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20px"/>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/newMoney"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <TextView
+        android:id="@+id/moneyDon"
+        android:layout_width="30px"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#ffffff"
+            />
+
+        <EditText
+        android:id="@+id/moneyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#ee9910" />
+
+        <EditText
+        android:id="@+id/moneyCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#ee99" />
+
+        <Button
+            android:id="@+id/btn_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ee9910"
+            android:text="Ajouter Argent"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="182dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset" />
+
+
+</LinearLayout>

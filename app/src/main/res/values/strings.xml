@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Argent entre amis</string>
+    <string name="title_home">Accueil</string>
+    <string name="title_dashboard">Dettes</string>
+    <string name="title_notifications">Bluetooth</string>
+</resources>

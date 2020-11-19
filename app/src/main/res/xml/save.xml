@@ -1,0 +1,9 @@
+<root>
+    <Tanguy>
+        <Gabriel argent="4.5"></Gabriel>
+    </Tanguy>
+    <Gabriel>
+        <Tanguy argent="5.5"></Tanguy>
+    </Gabriel>
+</root>
+
